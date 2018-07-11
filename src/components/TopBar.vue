@@ -1,9 +1,10 @@
 <template>
-	<div>topbar</div>
+  <div>top bar</div>
 </template>
 <script>
-	
+
+
 </script>
 <style scoped>
-	
+  
 </style>

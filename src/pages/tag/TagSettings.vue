@@ -1,13 +1,9 @@
 <template>
-  <div>
-    index page
-  </div>
+	<div>tag settings page</div>
 </template>
-
 <script>
-
+	
 </script>
-
 <style scoped>
-
+	
 </style>
