@@ -1,0 +1,12 @@
+input :
+{
+	"title": "玩家活跃程度",
+	"data": [
+		{"key":1,"value":"在线时长"},
+		{"key":2,"value":"登录次数"}
+	]
+}
+
+output:
+
+[{"key":1,"value":"在线时长"},]

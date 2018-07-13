@@ -1,53 +1,72 @@
 <template>
-  <div>
-    <el-container>
-      <el-aside width="200px">Aside</el-aside>
+  <div id="tag">
+    <div id="tmain">
       <el-container>
-        <el-header>Header</el-header>
-        <el-main>Main</el-main>
-        <el-footer>Footer</el-footer>
+        <el-aside id="tside">
+          <sideBar></sideBar>
+        </el-aside>
+        <div id="tcontent">
+          <el-container>
+            <!-- <el-header>
+              <topBar></topBar>
+            </el-header> -->
+            <el-main>
+              <mcontent></mcontent>
+            </el-main>
+            <!-- <el-footer>Footer</el-footer> -->
+          </el-container>
+        </div>
       </el-container>
-    </el-container>
+    </div>
   </div>
 </template>
 <script>
 import topBar from '@/components/TopBar'
+import sideBar from '@/components/SideBar'
+import mcontent from '@/components/Content'
 export default {
-  components: { topBar }
+  components: { topBar, sideBar, mcontent }
 }
 
 </script>
 <style scoped>
+#tmain {
+  display: flex;
+}
+
+#tall {
+  display: flex;
+  flex-direction: row;
+}
+
+#tcontent {
+  display: flex;
+  flex-direction: column;
+  width: 95vw;
+}
+
+#tside {
+  width: 5vw !important;
+}
+
 .el-header,
 .el-footer {
-  background-color: #B3C0D1;
+  background-color: #E4E4E4;
   color: #333;
   text-align: center;
   line-height: 60px;
-  width: 80%
-}
-
-.el-aside {
-  background-color: #D3DCE6;
-  color: #333;
-  text-align: center;
-  line-height: 200px;
-  width: 20%
 }
 
 .el-main {
   background-color: #E9EEF3;
   color: #333;
   text-align: center;
-  line-height: 160px;
-  
+  /*line-height: 160px;*/
+  padding: 0;
 }
 
 .el-container {
-  margin-bottom: 40px;
-  display: flex;
+	height: 100vh;
 }
-
-
 
 </style>
